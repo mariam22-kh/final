@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: #c4638d;
+}
+
+.not{
+  display: none;
+  background-color: #ECDBBA;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 20vh 0;
+  padding: 1%;
+  text-align: center;
+  position: fixed;
+  animation-name: notification;
+  animation-duration: 5s;
+  opacity: 0;
+  top: 3vh;
+}
+@keyframes notification {
+  0%   {opacity:0;}
+  25%  {opacity:1;}
+  50%  {opacity:1;}
+  75%  {opacity:1;}
+  100% {opacity:0;}
+  
+}
+.signin
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.logodash{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 5rem;
+  color: #f90718;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin: 10px 0;
+
+}
+.hel1{
+  font-size: 1.8rem;
+  font-weight: 550;
+  margin: 0;
+  color: #fff;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formgroup {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 290px;
+}
+.formfield {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.formfield::placeholder {
+  color: transparent;
+}
+.formfield:placeholder-shown ~ .formlabel {
+  font-size: 1.1rem;
+  cursor: text;
+  top: 20px;
+}
+.formlabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.formfield:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-color: #fd0808;
+  border-image-slice: 1;
+}
+.formfield:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 0.8rem;
+  color: #fa0909;
+  font-weight: 700;
+}
+.formfield:required, .formfield:invalid {
+  box-shadow: none;
+}
+.submit{
+  margin-top: 20px;
+}
+#submit{
+  width: 290px;
+  height: 45px;
+  font-size: 1.2rem;
+  background-color: #fb060e;
+  color: #fff;
+  border: 0px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#submit:hover{
+  background-color: #fc0408;
+  
+}
+#submit:active{
+  border-style: inset;
+  border-width: 2px;
+  border-color: #f90e0e;
+}
+.hel2{
+  width: 280px;
+}
